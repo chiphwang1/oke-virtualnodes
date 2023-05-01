@@ -29,62 +29,62 @@ variables:
         description: "The compartment to create the resources in."
     
     "region":
-    type: oci:identity:region:name
-    visible: true
-    required: true
-    title: "Region"
-    description: "The region in which to create resources."
+      type: oci:identity:region:name
+      visible: true
+      required: true
+      title: "Region"
+      description: "The region in which to create resources."
 
     "node_size":
-    type: integer
-    visible: true
-    required: true
-    minimum: 1
-    maximum: 1000
-    title: "Number of Virtual Nodes"
-    description: "number of worker nodes"
+      type: integer
+      visible: true
+      required: true
+      minimum: 1
+      maximum: 1000
+      title: "Number of Virtual Nodes"
+      description: "number of worker nodes"
 
     "node_shape":
-    type: enum
-    enum:
+      type: enum
+      enum:
       - "Pod.Standard.E4.Flex"
       - "Pod.Standard.E3.Flex" 
-    visible: true
-    required: true
-    title: "Node Size"
-    description: "Shapes of Virtal Nodes"
+      visible: true
+      required: true
+      title: "Node Size"
+      description: "Shapes of Virtal Nodes"
 
     "kubernetes_version":
-    type: enum
-    enum:
+      type: enum
+      enum:
       - "v1.26.2"
       - "v1.25.4" 
-    visible: true
-    required: true
-    title: "Kubernetes Version"
-    description: "Version of Kubernetes"
+      visible: true
+      required: true
+      title: "Kubernetes Version"
+      description: "Version of Kubernetes"
 
     "create_metrics_server":
-    type: boolean
-    visible: true
-    required: true
-    title: "Metrics Server"
-    description: "Choose to add Metrics Server to OKE cluster"
+      type: boolean
+      visible: true
+      required: true
+      title: "Metrics Server"
+      description: "Choose to add Metrics Server to OKE cluster"
 
 
     "create_oke_virtual_node_policy":
-    type: boolean
-    visible: true
-    required: true
-    title: "Oke Virtual Node Policy"
-    description: "Choose to create policy for Virtial Node Operation"
+      type: boolean
+      visible: true
+      required: true
+      title: "Oke Virtual Node Policy"
+      description: "Choose to create policy for Virtial Node Operation"
 
     "root_compartment_id":
-    type: oci:identity:compartment:id
-    visible: true
-    required: false
-    title: "Root Compartment"
-    description: "Root Compartment"
+      type: oci:identity:compartment:id
+      visible: true
+      required: false
+      title: "Root Compartment"
+      description: "Root Compartment"
 
 
 
