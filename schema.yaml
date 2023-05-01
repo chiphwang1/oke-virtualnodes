@@ -6,19 +6,20 @@ locale: “en"
 
 variableGroups:
     - title: "OCI Inputs"
-      variables
+      visible: 
+      variables:
       - "compartment_id"
       - "region"
     - title: "OKE Inputs"
-      variables
-        - "node_shape"
-        - "node_size"
-        - "kubernetes_version"
-        - "create_metrics_server"
+      variables:
+      - "node_shape"
+      - "node_size"
+      - "kubernetes_version"
+      - "create_metrics_server"
     - title: "Policy Inputs"
-      variables
-        - "create_oke_virtual_node_policy"
-        - "root_compartment_id"
+      variables:
+      - "create_oke_virtual_node_policy"
+      - "root_compartment_id"
 variables:
     "compartment_id":
         type: oci:identity:compartment:id
