@@ -39,7 +39,7 @@ resource "oci_core_route_table" "generated_oci_core_route_table" {
 	}
 	route_rules {
 		description = "traffic to OCI services"
-		destination = "all-phx-services-in-oracle-services-network"
+		destination = var.oci_service_gateway[var.region]
 		destination_type = "SERVICE_CIDR_BLOCK"
 		network_entity_id = "${oci_core_service_gateway.generated_oci_core_service_gateway.id}"
 	}
