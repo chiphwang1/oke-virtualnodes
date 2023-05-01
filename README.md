@@ -59,7 +59,8 @@ This Terraform stack facilitates the deployment of an Oracle Container Engine fo
 | `node_shape` | The shape of Virtual Nodes | string | yes       |
 | `node_size` | The number of Virtual Nodes in the node pool  | number | yes       |
 | `create_oke_virtual_node_policy` | To create the policy for for Virtual Node operations. Set to "true" to create the policy | bool | yes       |
-| `root_compartment_id` | Root compartment to deploy OKE Virtual Nodes policy | string | no  |
+| `root_compartment_id` | Root compartment to deploy OKE Virtual Nodes policy | string | yes if  `create_oke_virtual_node_policy` is set to true |
+| `create_metrics_server` | install metrics server. Set to "true" to create the policy | string | yes  |
 
 ## Useful commands 
 
