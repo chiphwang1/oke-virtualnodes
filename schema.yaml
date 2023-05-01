@@ -7,8 +7,8 @@ locale: “en"
 variableGroups:
     - title: "OCI Inputs"
       variables
-        - "compartment_id"
-        - "region"
+      - "compartment_id"
+      - "region"
     - title: "OKE Inputs"
       variables
         - "node_shape"
