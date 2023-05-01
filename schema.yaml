@@ -86,6 +86,12 @@ variables:
       title: "Root Compartment"
       description: "Root Compartment"
 
+  
+   "oci_service_gateway":
+      visible: false
+      required: false
+      title: "Service Gateway"
+      description: "Service gateway gateway"
 
 
 
