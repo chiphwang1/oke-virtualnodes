@@ -35,7 +35,7 @@ variables:
     title: "Region"
     description: "The region in which to create resources."
 
-    "node_size"
+    "node_size":
     type: integer
     visible: true
     required: true
@@ -44,7 +44,7 @@ variables:
     title: "Number of Virtual Nodes"
     description: "number of worker nodes"
 
-    "node_shape"
+    "node_shape":
     type: enum
     enum:
       - "Pod.Standard.E4.Flex"
@@ -54,7 +54,7 @@ variables:
     title: "Node Size"
     description: "Shapes of Virtal Nodes"
 
-    "kubernetes_version"
+    "kubernetes_version":
     type: enum
     enum:
       - "v1.26.2"
@@ -64,7 +64,7 @@ variables:
     title: "Kubernetes Version"
     description: "Version of Kubernetes"
 
-    "create_metrics_server"
+    "create_metrics_server":
     type: boolean
     visible: true
     required: true
@@ -72,14 +72,14 @@ variables:
     description: "Choose to add Metrics Server to OKE cluster"
 
 
-    "create_oke_virtual_node_policy"
+    "create_oke_virtual_node_policy":
     type: boolean
     visible: true
     required: true
     title: "Oke Virtual Node Policy"
     description: "Choose to create policy for Virtial Node Operation"
 
-    "root_compartment_id"
+    "root_compartment_id":
     type: oci:identity:compartment:id
     visible: true
     required: false
